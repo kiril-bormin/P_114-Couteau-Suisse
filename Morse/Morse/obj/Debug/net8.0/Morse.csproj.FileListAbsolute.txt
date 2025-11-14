@@ -1,0 +1,14 @@
+C:\Users\px20umf\source\repos\Morse\Morse\bin\Debug\net8.0\Morse.exe
+C:\Users\px20umf\source\repos\Morse\Morse\bin\Debug\net8.0\Morse.deps.json
+C:\Users\px20umf\source\repos\Morse\Morse\bin\Debug\net8.0\Morse.runtimeconfig.json
+C:\Users\px20umf\source\repos\Morse\Morse\bin\Debug\net8.0\Morse.dll
+C:\Users\px20umf\source\repos\Morse\Morse\bin\Debug\net8.0\Morse.pdb
+C:\Users\px20umf\source\repos\Morse\Morse\obj\Debug\net8.0\Morse.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\px20umf\source\repos\Morse\Morse\obj\Debug\net8.0\Morse.AssemblyInfoInputs.cache
+C:\Users\px20umf\source\repos\Morse\Morse\obj\Debug\net8.0\Morse.AssemblyInfo.cs
+C:\Users\px20umf\source\repos\Morse\Morse\obj\Debug\net8.0\Morse.csproj.CoreCompileInputs.cache
+C:\Users\px20umf\source\repos\Morse\Morse\obj\Debug\net8.0\Morse.dll
+C:\Users\px20umf\source\repos\Morse\Morse\obj\Debug\net8.0\refint\Morse.dll
+C:\Users\px20umf\source\repos\Morse\Morse\obj\Debug\net8.0\Morse.pdb
+C:\Users\px20umf\source\repos\Morse\Morse\obj\Debug\net8.0\Morse.genruntimeconfig.cache
+C:\Users\px20umf\source\repos\Morse\Morse\obj\Debug\net8.0\ref\Morse.dll

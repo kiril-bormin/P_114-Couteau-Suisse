@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\px20umf\\source\\repos\\Couteau-Suisse\\Couteau-Suisse\\Couteau-Suisse.csproj": {}
+    "C:\\Users\\px20umf\\Documents\\GitHub\\P_114-Couteau-Suisse\\Couteau-Suisse\\Couteau-Suisse\\Couteau-Suisse.csproj": {}
   },
   "projects": {
-    "C:\\Users\\px20umf\\source\\repos\\Couteau-Suisse\\Couteau-Suisse\\Couteau-Suisse.csproj": {
+    "C:\\Users\\px20umf\\Documents\\GitHub\\P_114-Couteau-Suisse\\Couteau-Suisse\\Couteau-Suisse\\Couteau-Suisse.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\px20umf\\source\\repos\\Couteau-Suisse\\Couteau-Suisse\\Couteau-Suisse.csproj",
+        "projectUniqueName": "C:\\Users\\px20umf\\Documents\\GitHub\\P_114-Couteau-Suisse\\Couteau-Suisse\\Couteau-Suisse\\Couteau-Suisse.csproj",
         "projectName": "Couteau-Suisse",
-        "projectPath": "C:\\Users\\px20umf\\source\\repos\\Couteau-Suisse\\Couteau-Suisse\\Couteau-Suisse.csproj",
+        "projectPath": "C:\\Users\\px20umf\\Documents\\GitHub\\P_114-Couteau-Suisse\\Couteau-Suisse\\Couteau-Suisse\\Couteau-Suisse.csproj",
         "packagesPath": "C:\\Users\\px20umf\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\px20umf\\source\\repos\\Couteau-Suisse\\Couteau-Suisse\\obj\\",
+        "outputPath": "C:\\Users\\px20umf\\Documents\\GitHub\\P_114-Couteau-Suisse\\Couteau-Suisse\\Couteau-Suisse\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

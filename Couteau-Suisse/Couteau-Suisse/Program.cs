@@ -26,7 +26,34 @@
                 }
                 if(choiseProgram == 2)
                 {
-                    ConvertBases.ConvertDecimalBinary();
+                    Console.Clear();
+                    Console.WriteLine("1. Décimal > Binaire");
+                    Console.WriteLine("2. Binaire > Décimal");
+                    Console.WriteLine("3. Binaire > Octal");
+                    Console.WriteLine("4. Octal > Binaire");
+                    Console.WriteLine("5. Retourner à la page précédente");
+                    valueIsOk = int.TryParse(Console.ReadLine(), out choiseProgram);
+                    if (choiseProgram == 1)
+                    {
+                        ConvertBases.ConvertDecimalBinary();
+                    }
+                    else if (choiseProgram == 2)
+                    {
+                        //ConvertBases.ConvertBinaryDecimal();
+                    }
+                    else if (choiseProgram == 3)
+                    {
+                        //ConvertBases.ConvertBinaryOctal();
+                    }
+                    else if (choiseProgram == 4)
+                    {
+                        //ConvertBases.ConvertOctalBinary();
+                    }
+                    else if (choiseProgram == 5)
+                    {
+                        programRestartValue = false;
+                    }
+
                 }
                 else if (choiseProgram == 4)
                 { 

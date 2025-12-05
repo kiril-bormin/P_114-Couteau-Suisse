@@ -43,7 +43,7 @@
                     }
                     else if (choiseProgram == 3)
                     {
-                        //ConvertBases.ConvertBinaryOctal();
+                        ConvertBases.ConvertBinaryOctal();
                     }
                     else if (choiseProgram == 4)
                     {

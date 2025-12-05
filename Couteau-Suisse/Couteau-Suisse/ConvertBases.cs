@@ -88,7 +88,7 @@ namespace Couteau_Suisse
                 if (valueIsOk && numberToConvert >= 0)
                 {
                     string decimalResult = BinaryToDecimal(numberToConvert);
-                    Console.WriteLine($"Le nombre {numberToConvert} en binaire est : {decimalResult}");
+                    Console.WriteLine($"Le nombre {numberToConvert} en décimal est : {decimalResult}");
                 }
                 else
                 {
@@ -97,7 +97,7 @@ namespace Couteau_Suisse
                 do
                 {
                     repeat = false;
-                    Console.Write("Souhaitez-vous convertir encore un nombre en Binaire? Oui -> (O), Non -> (N) : ");
+                    Console.Write("Souhaitez-vous convertir encore un nombre binaire en décimal? Oui -> (O), Non -> (N) : ");
                     restartChoise = Console.ReadLine();
                     if (restartChoise == "O" || restartChoise == "o" || restartChoise == "OUI" || restartChoise == "Oui")
                     {
@@ -123,16 +123,84 @@ namespace Couteau_Suisse
 
             for (int i = 0; i < binarys.Length; i++)
             {
-                
-                if(binarys[binarys.Length - i - 1]== '1')
+                if (binarys[binarys.Length - i - 1] == '1')
                 {
                     temp += power;
                 }
                 power *= 2;
-                
-            }
 
+            }
             return temp.ToString();
+        }
+        public static void ConvertBinaryOctal()
+        {
+            bool restartProgram = true;
+            string restartChoise = null;
+            bool repeat = false;
+            Console.Clear();
+            while (restartProgram == true)
+            {
+                Console.Write("Entrez le nombre binaire (de 8 bit max) à convertir en octal : ");
+                valueIsOk = int.TryParse(Console.ReadLine(), out numberToConvert);
+
+                if (valueIsOk && numberToConvert >= 0)
+                {
+                    string decimalResult = BinaryToOctal(numberToConvert);
+                    Console.WriteLine($"Le nombre {numberToConvert} en octal est : {decimalResult}");
+                }
+                else
+                {
+                    Console.WriteLine("Entrée invalide. Veuillez entrer un nombre entier positif.");
+                }
+                do
+                {
+                    repeat = false;
+                    Console.Write("Souhaitez-vous convertir encore un nombre binaire en octal? Oui -> (O), Non -> (N) : ");
+                    restartChoise = Console.ReadLine();
+                    if (restartChoise == "O" || restartChoise == "o" || restartChoise == "OUI" || restartChoise == "Oui")
+                    {
+                        restartProgram = true;
+                    }
+                    else if (restartChoise == "N" || restartChoise == "n" || restartChoise == "NON" || restartChoise == "Non")
+                    {
+                        restartProgram = false;
+                    }
+                    else
+                    {
+                        repeat = true;
+                    }
+                } while (repeat == true);
+                Console.Clear();
+            }
+        }
+        public static string BinaryToOctal(int numberToConvert)
+        {
+            int temp = 0;
+            int power = 1;
+            char[] binarys = numberToConvert.ToString().ToCharArray();
+            List<char> octalResult = new List<char>();
+            int unit = (int)Math.Ceiling((double)binarys.Length / 3);
+            char charValue;
+
+
+            for (int i = 0; i < binarys.Length; i++)
+            {
+                for (int o = 0; o < 3; o++)
+                {
+                    if (binarys[binarys.Length - o - 1] == '1')
+                    {
+                        temp += power;
+                    }
+                    power *= 2;
+                }
+                power = 0;
+
+                i += 3;
+                charValue = temp.ToString()[0];
+                octalResult.Insert(0, charValue);
+                unit--;
+            } 
+            return new string(octalResult.ToArray());
         }
     }
 }

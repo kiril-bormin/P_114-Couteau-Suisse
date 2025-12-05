@@ -39,7 +39,7 @@
                     }
                     else if (choiseProgram == 2)
                     {
-                        //ConvertBases.ConvertBinaryDecimal();
+                        ConvertBases.ConvertBinaryDecimal();
                     }
                     else if (choiseProgram == 3)
                     {

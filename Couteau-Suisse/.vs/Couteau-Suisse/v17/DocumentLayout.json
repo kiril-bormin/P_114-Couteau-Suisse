@@ -7,16 +7,12 @@
       "RelativeMoniker": "D:0:0:{DB9C8A80-02CF-4A14-85B8-D6EAC3C36D06}|Couteau-Suisse\\Couteau-Suisse.csproj|solutionrelative:couteau-suisse\\convertbases.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DB9C8A80-02CF-4A14-85B8-D6EAC3C36D06}|Couteau-Suisse\\Couteau-Suisse.csproj|c:\\users\\px20umf\\documents\\github\\p_114-couteau-suisse\\couteau-suisse\\couteau-suisse\\morse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DB9C8A80-02CF-4A14-85B8-D6EAC3C36D06}|Couteau-Suisse\\Couteau-Suisse.csproj|solutionrelative:couteau-suisse\\morse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{DB9C8A80-02CF-4A14-85B8-D6EAC3C36D06}|Couteau-Suisse\\Couteau-Suisse.csproj|c:\\users\\px20umf\\documents\\github\\p_114-couteau-suisse\\couteau-suisse\\couteau-suisse\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DB9C8A80-02CF-4A14-85B8-D6EAC3C36D06}|Couteau-Suisse\\Couteau-Suisse.csproj|solutionrelative:couteau-suisse\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DB9C8A80-02CF-4A14-85B8-D6EAC3C36D06}|Couteau-Suisse\\Couteau-Suisse.csproj|c:\\users\\px20umf\\documents\\github\\p_114-couteau-suisse\\couteau-suisse\\couteau-suisse\\couteau-suisse.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
-      "RelativeMoniker": "D:0:0:{DB9C8A80-02CF-4A14-85B8-D6EAC3C36D06}|Couteau-Suisse\\Couteau-Suisse.csproj|solutionrelative:couteau-suisse\\couteau-suisse.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+      "AbsoluteMoniker": "D:0:0:{DB9C8A80-02CF-4A14-85B8-D6EAC3C36D06}|Couteau-Suisse\\Couteau-Suisse.csproj|c:\\users\\px20umf\\documents\\github\\p_114-couteau-suisse\\couteau-suisse\\couteau-suisse\\morse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB9C8A80-02CF-4A14-85B8-D6EAC3C36D06}|Couteau-Suisse\\Couteau-Suisse.csproj|solutionrelative:couteau-suisse\\morse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -36,38 +32,27 @@
               "RelativeDocumentMoniker": "Couteau-Suisse\\ConvertBases.cs",
               "ToolTip": "C:\\Users\\px20umf\\Documents\\GitHub\\P_114-Couteau-Suisse\\Couteau-Suisse\\Couteau-Suisse\\ConvertBases.cs",
               "RelativeToolTip": "Couteau-Suisse\\ConvertBases.cs",
-              "ViewState": "AgIAAFIAAAAAAAAAAADwv2AAAAASAAAAAAAAAA==",
+              "ViewState": "AgIAAHUAAAAAAAAAAIA5wIIAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-14T09:36:15.055Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Couteau-Suisse",
-              "DocumentMoniker": "C:\\Users\\px20umf\\Documents\\GitHub\\P_114-Couteau-Suisse\\Couteau-Suisse\\Couteau-Suisse\\Couteau-Suisse.csproj",
-              "RelativeDocumentMoniker": "Couteau-Suisse\\Couteau-Suisse.csproj",
-              "ToolTip": "C:\\Users\\px20umf\\Documents\\GitHub\\P_114-Couteau-Suisse\\Couteau-Suisse\\Couteau-Suisse\\Couteau-Suisse.csproj",
-              "RelativeToolTip": "Couteau-Suisse\\Couteau-Suisse.csproj",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-11-14T08:24:42.784Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\px20umf\\Documents\\GitHub\\P_114-Couteau-Suisse\\Couteau-Suisse\\Couteau-Suisse\\Program.cs",
               "RelativeDocumentMoniker": "Couteau-Suisse\\Program.cs",
               "ToolTip": "C:\\Users\\px20umf\\Documents\\GitHub\\P_114-Couteau-Suisse\\Couteau-Suisse\\Couteau-Suisse\\Program.cs",
               "RelativeToolTip": "Couteau-Suisse\\Program.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAgwDEAAAA8AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-14T08:02:24.401Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Morse.cs",
               "DocumentMoniker": "C:\\Users\\px20umf\\Documents\\GitHub\\P_114-Couteau-Suisse\\Couteau-Suisse\\Couteau-Suisse\\Morse.cs",
               "RelativeDocumentMoniker": "Couteau-Suisse\\Morse.cs",

@@ -1,4 +1,4 @@
-﻿﻿using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -57,7 +57,7 @@ namespace Couteau_Suisse
             int temp;
             int i = 1;
 
-            char[] digits = {'0','0','0','0','0','0','0','0'};
+            char[] digits = { '0', '0', '0', '0', '0', '0', '0', '0' };
 
             while (numberToConvert > 0)
             {
@@ -82,13 +82,13 @@ namespace Couteau_Suisse
             Console.Clear();
             while (restartProgram == true)
             {
-                Console.Write("Entrez le nombre décimal (de 0 jusqu'à 255) à convertir en binaire : ");
+                Console.Write("Entrez le nombre binaire (de 8 bit max) à convertir en décimal : ");
                 valueIsOk = int.TryParse(Console.ReadLine(), out numberToConvert);
 
                 if (valueIsOk && numberToConvert >= 0)
                 {
-                    string binaryResult = DecimalToBinary(numberToConvert);
-                    Console.WriteLine($"Le nombre {numberToConvert} en binaire est : {binaryResult}");
+                    string decimalResult = BinaryToDecimal(numberToConvert);
+                    Console.WriteLine($"Le nombre {numberToConvert} en binaire est : {decimalResult}");
                 }
                 else
                 {
@@ -114,6 +114,25 @@ namespace Couteau_Suisse
                 } while (repeat == true);
                 Console.Clear();
             }
+        }
+        public static string BinaryToDecimal(int numberToConvert)
+        {
+            int temp = 0;
+            int power = 1;
+            char[] binarys = numberToConvert.ToString().ToCharArray();
+
+            for (int i = 0; i < binarys.Length; i++)
+            {
+                
+                if(binarys[binarys.Length - i - 1]== '1')
+                {
+                    temp += power;
+                }
+                power *= 2;
+                
+            }
+
+            return temp.ToString();
         }
     }
 }

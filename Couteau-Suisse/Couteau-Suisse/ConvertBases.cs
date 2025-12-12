@@ -210,12 +210,12 @@ namespace Couteau_Suisse
             Console.Clear();
             while (restartProgram == true)
             {
-                Console.Write("Entrez le nombre octal (de 0 jusqu'à 255) à convertir en binaire : ");
+                Console.Write("Entrez le nombre octal (de 0 jusqu'à 377) à convertir en binaire : ");
                 valueIsOk = int.TryParse(Console.ReadLine(), out numberToConvert);
 
                 if (valueIsOk && numberToConvert >= 0)
                 {
-                    string binaryResult = DecimalToBinary(numberToConvert);
+                    string binaryResult = OctalToBinary(numberToConvert.ToString());
                     Console.WriteLine($"Le nombre {numberToConvert} en binaire est : {binaryResult}");
                 }
                 else
@@ -243,34 +243,27 @@ namespace Couteau_Suisse
                 Console.Clear();
             }
         }
-        public static string OctalToBinary(int numberToConvert)
+        public static string OctalToBinary(string octalString)
         {
-            int temp = 0;
-            int power = 1;
-            char[] binarys = numberToConvert.ToString().ToCharArray();
-            List<char> octalResult = new List<char>();
-            int unit = (int)Math.Ceiling((double)binarys.Length / 3);
-            char charValue;
+            StringBuilder result = new StringBuilder();
 
-
-            for (int i = 0; i < binarys.Length; i++)
+            foreach (char c in octalString)
             {
-                for (int o = 0; o < 3; o++)
+                switch (c)
                 {
-                    if (binarys[binarys.Length - o - 1] == '1')
-                    {
-                        temp += power;
-                    }
-                    power *= 2;
+                    case '0': result.Append("000"); break;
+                    case '1': result.Append("001"); break;
+                    case '2': result.Append("010"); break;
+                    case '3': result.Append("011"); break;
+                    case '4': result.Append("100"); break;
+                    case '5': result.Append("101"); break;
+                    case '6': result.Append("110"); break;
+                    case '7': result.Append("111"); break;
                 }
-                power = 0;
-
-                i += 3;
-                charValue = temp.ToString()[0];
-                octalResult.Insert(0, charValue);
-                unit--;
             }
-            return new string(octalResult.ToArray());
+
+            string finalString = result.ToString().TrimStart('0');
+            return finalString == "" ? "0" : finalString;
         }
     }
 }

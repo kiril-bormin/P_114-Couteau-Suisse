@@ -47,7 +47,7 @@
                     }
                     else if (choiseProgram == 4)
                     {
-                        //ConvertBases.ConvertOctalBinary();
+                        ConvertBases.ConvertOctalBinary();
                     }
                     else if (choiseProgram == 5)
                     {

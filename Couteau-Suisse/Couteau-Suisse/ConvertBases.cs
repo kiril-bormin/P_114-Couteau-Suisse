@@ -145,7 +145,7 @@ namespace Couteau_Suisse
 
                 if (valueIsOk && numberToConvert >= 0)
                 {
-                    string decimalResult = BinaryToOctal(numberToConvert);
+                    string decimalResult = BinaryToOctal(numberToConvert.ToString());
                     Console.WriteLine($"Le nombre {numberToConvert} en octal est : {decimalResult}");
                 }
                 else
@@ -173,7 +173,77 @@ namespace Couteau_Suisse
                 Console.Clear();
             }
         }
-        public static string BinaryToOctal(int numberToConvert)
+        public static string BinaryToOctal(string binaryString)
+        {
+            int remainder = binaryString.Length % 3;
+            if (remainder != 0)
+            {
+                binaryString = binaryString.PadLeft(binaryString.Length + (3 - remainder), '0');
+            }
+
+            string result = "";
+
+            for (int i = 0; i < binaryString.Length; i += 3)
+            {
+                string group = binaryString.Substring(i, 3);
+                int value = 0;
+                int power = 4;
+
+                foreach (char c in group)
+                {
+                    if (c == '1')
+                    {
+                        value += power;
+                    }
+                    power /= 2;
+                }
+                result += value.ToString();
+            }
+
+            return result;
+        }
+        public static void ConvertOctalBinary()
+        {
+            bool restartProgram = true;
+            string restartChoise = null;
+            bool repeat = false;
+            Console.Clear();
+            while (restartProgram == true)
+            {
+                Console.Write("Entrez le nombre octal (de 0 jusqu'à 255) à convertir en binaire : ");
+                valueIsOk = int.TryParse(Console.ReadLine(), out numberToConvert);
+
+                if (valueIsOk && numberToConvert >= 0)
+                {
+                    string binaryResult = DecimalToBinary(numberToConvert);
+                    Console.WriteLine($"Le nombre {numberToConvert} en binaire est : {binaryResult}");
+                }
+                else
+                {
+                    Console.WriteLine("Entrée invalide. Veuillez entrer un nombre entier positif.");
+                }
+                do
+                {
+                    repeat = false;
+                    Console.Write("Souhaitez-vous convertir encore un nombre en Binaire? Oui -> (O), Non -> (N) : ");
+                    restartChoise = Console.ReadLine();
+                    if (restartChoise == "O" || restartChoise == "o" || restartChoise == "OUI" || restartChoise == "Oui")
+                    {
+                        restartProgram = true;
+                    }
+                    else if (restartChoise == "N" || restartChoise == "n" || restartChoise == "NON" || restartChoise == "Non")
+                    {
+                        restartProgram = false;
+                    }
+                    else
+                    {
+                        repeat = true;
+                    }
+                } while (repeat == true);
+                Console.Clear();
+            }
+        }
+        public static string OctalToBinary(int numberToConvert)
         {
             int temp = 0;
             int power = 1;
@@ -199,7 +269,7 @@ namespace Couteau_Suisse
                 charValue = temp.ToString()[0];
                 octalResult.Insert(0, charValue);
                 unit--;
-            } 
+            }
             return new string(octalResult.ToArray());
         }
     }

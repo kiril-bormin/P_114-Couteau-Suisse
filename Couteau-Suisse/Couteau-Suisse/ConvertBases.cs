@@ -261,7 +261,6 @@ namespace Couteau_Suisse
                     case '7': result.Append("111"); break;
                 }
             }
-
             string finalString = result.ToString().TrimStart('0');
             return finalString == "" ? "0" : finalString;
         }

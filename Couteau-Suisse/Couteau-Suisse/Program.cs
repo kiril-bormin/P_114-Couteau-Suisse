@@ -1,5 +1,5 @@
 ﻿namespace Couteau_Suisse
-{
+{   
     internal class Program
     {
         static void Main(string[] args)
@@ -13,7 +13,7 @@
                 Console.WriteLine("=== Couteau Suisse – Utilitaires ===");
                 Console.WriteLine("1. Convertir du texte en code Morse");
                 Console.WriteLine("2. Convertir des nombres entre différentes bases (Décimal <> Binaire <> Octal)");
-                Console.WriteLine("3. (à venir)");
+                Console.WriteLine("3. Chiffrer une phrase avec César");
                 Console.WriteLine("4. Quitter le programme");
                 Console.Write("Veuillez entrer votre choix : ");
 
@@ -51,9 +51,13 @@
                     }
                     else if (choiseProgram == 5)
                     {
-                        programRestartValue = false;
+                        programRestartValue = true;
                     }
 
+                }
+                else if (choiseProgram == 3)
+                {
+                    Cesar.ChiffrerMessage();
                 }
                 else if (choiseProgram == 4)
                 { 

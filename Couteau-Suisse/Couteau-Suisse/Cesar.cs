@@ -8,7 +8,6 @@ namespace Couteau_Suisse
 {
     internal class Cesar
     {
-        // Ton tableau 2D comme demandé
         static string[,] table = new string[26, 2] {
             {"A", "0"},
             {"B", "1"},
@@ -92,7 +91,6 @@ namespace Couteau_Suisse
                         Console.Write(c);
                     }
                 }
-
                 do
                 {
                     repeat = false;

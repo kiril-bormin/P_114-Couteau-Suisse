@@ -84,8 +84,9 @@ namespace Couteau_Suisse
             {
                 Console.Write("Entrez le nombre binaire (de 8 bit max) à convertir en décimal : ");
                 valueIsOk = int.TryParse(Console.ReadLine(), out numberToConvert);
+                bool isBinary = numberToConvert.ToString().All(c => c == '0' || c == '1');
 
-                if (valueIsOk && numberToConvert >= 0)
+                if (isBinary && valueIsOk && numberToConvert >= 0)
                 {
                     string decimalResult = BinaryToDecimal(numberToConvert);
                     Console.WriteLine($"Le nombre {numberToConvert} en décimal est : {decimalResult}");
